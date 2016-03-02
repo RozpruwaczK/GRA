@@ -1,0 +1,54 @@
+@r: 16px;
+@moj_kolor: #222;
+
+ul li {
+	display: block;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	float:left;
+}
+
+ul {
+	display: inline;
+	white-space: nowrap;
+	margin: 0;
+    padding: 0;
+}
+div.wyp {
+    width: @r;
+	height: @r;
+    border: 1px solid red;
+    margin: 0;
+    padding: 0;
+}
+
+.item {
+    background-position: -96px -1440px;
+    width: 16px;
+    height: 16px;
+}
+
+.item-image {
+    background: url(../img/item-sprite.png) no-repeat top left;
+    background-color: white;
+    clear: both;
+    float: left;
+	
+}
+
+.item-image:hover {
+   
+    background-color: red;
+
+	
+}
+
+
+.clear {
+	clear:both;
+	height: (@r - 20);
+	margin: 0;
+    padding: 0;
+	
+}

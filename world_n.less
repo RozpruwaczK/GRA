@@ -1,0 +1,91 @@
+/* sluzy do formatowania wyswietlania tablicy w html*/
+@r: 16px; /* rozmiar obrazka w kafelku*/
+@k: 16px; /*rozmiar kafelka*/
+@drx: 100px; /*szerokosc dymku*/
+@dry: 30px; /*wysokosc dymku*/
+@dx: 25px; /*przesuniecie x dymku*/
+@dy: 20px; /*przesuniecie y dymku*/
+ul li {
+	z-index: 1;
+	display: block;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	float:left;
+}
+
+ul {
+	z-index: 1;
+	display: inline;
+	white-space: nowrap;
+	margin: 0;
+    padding: 0;
+}
+div.wyp {
+	z-index: 1;
+    width: @r;
+	height: @r;
+
+    margin: (@k - @r) / 2;
+    padding: 0;
+    vertical-align:center;
+}
+div.kafel {
+   	z-index: 1;
+    width: @k;
+	height: @k;
+    border: 1px solid orange;
+    margin: 0;
+    padding: 0;
+    /*position: relative;*/
+}
+
+div.kafel:hover {
+
+	background-color: orange;
+}
+
+
+.dymek {
+    z-index: 50;
+    display: none;
+    position: relative;
+    top: @dy; 
+    left: @dx; 
+    width: @drx;
+    height: @dry;
+    background-color: white;
+    border: 1px solid blue;
+}
+
+
+div.kafel:hover .dymek {
+	z-index: 50;
+    display: block;
+}
+
+div.tlo {
+
+    background-color: #cfd99c;
+}
+
+
+.item-image {
+    background: url(../img/item-sprite.png) no-repeat;
+    background-position: center;
+   }
+
+.item-image:hover {
+   
+    background-color: red;
+
+	
+}
+
+
+.clear {
+	clear:both;
+	margin: 0;
+    padding: 0;
+	
+}

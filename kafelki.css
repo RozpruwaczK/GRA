@@ -1,0 +1,40 @@
+ul li {
+  display: block;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  float: left;
+}
+ul {
+  display: inline;
+  white-space: nowrap;
+  margin: 0;
+  padding: 0;
+}
+div.wyp {
+  width: 16px;
+  height: 16px;
+  border: 1px solid red;
+  margin: 0;
+  padding: 0;
+}
+.item {
+  background-position: -96px -1440px;
+  width: 16px;
+  height: 16px;
+}
+.item-image {
+  background: url(../img/item-sprite.png) no-repeat top left;
+  background-color: white;
+  clear: both;
+  float: left;
+}
+.item-image:hover {
+  background-color: red;
+}
+.clear {
+  clear: both;
+  height: -4px;
+  margin: 0;
+  padding: 0;
+}

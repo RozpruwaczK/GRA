@@ -1,0 +1,37 @@
+<html> <!-- html ze skryptem do pokazywania okienka przy polu -->
+    <head>
+        <title>Tooltip - przykład</title>
+        <script type="text/javascript">
+            function showTip(oEvent,id) {
+                var oDiv = document.getElementById(id);
+                oDiv.style.visibility = "visible";
+                oDiv.style.left = oEvent.clientX + 5;
+                oDiv.style.top = oEvent.clientY + 5;
+            }
+
+            function hideTip(oEvent,id) {
+                var oDiv = document.getElementById(id);
+                oDiv.style.visibility = "hidden";
+            }
+        </script>
+    </head>
+    <body>
+
+        <div  
+             style="background-color: red; height: 50px; width: 50px"
+             onmouseover="showTip(event,2)" onmouseout="hideTip(event,2)"></div>
+
+         <div id="1" 
+              style="background-color: yellow; position: absolute; visibility: hidden; padding: 5px">
+            <span style="font-weight: bold">Własna podpowiedź</span><br />
+            W tym miejscu można umieścić bardziej szczegółowe informacje.
+
+         </div>
+          <div id="2" 
+              style="background-color: yellow; position: absolute; visibility: hidden; padding: 5px">
+            <span style="font-weight: bold">2</span><br />
+            W222222222222222222222222czegółowe informacje.
+          
+         </div>
+    </body>
+</html>
